@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ICT Training Centre</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body id="top">
+    <header>
+        <h1>ISBAT University Student ICT Training Centre</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#courses">Courses</a>
+            <a href="#timetable">Timetable</a>
+            <a href="#registration">Registration</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the ICT Training Centre</h2>
+            <p>
+                Find information about our available training programmes,
+                weekly timetable, and student registration.
+            </p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                The Student ICT Training Centre at ISBAT University helps
+                students build practical skills and knowledge in information
+                and communication technology.
+            </p>
+            <p>
+                The centre provides training activities in programming,
+                networking, databases, and cybersecurity. Students practise
+                their skills and learn how technology can solve everyday
+                problems.
+            </p>
+
+            <img src="training1.jpg" alt="Student practising on a computer">
+            <img src="training2.jpg" alt="Students attending an ICT lesson">
+            <img src="training3.jpg" alt="Student presenting ICT knowledge">
+        </section>
+
+        <section id="courses">
+            <h2>Training Courses</h2>
+
+            <h3>Available Programmes</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>Computer Networking</li>
+                <li>Database Management</li>
+                <li>Cybersecurity</li>
+            </ul>
+
+            <h3>Steps to Register</h3>
+            <ol>
+                <li>Choose a training programme.</li>
+                <li>Complete the student registration form.</li>
+                <li>Check that your information is correct.</li>
+                <li>Submit the form.</li>
+            </ol>
+
+            <h3>Course Information</h3>
+            <div class="course-cards">
+                <article class="course-card">
+                    <span class="register-label">Register Now</span>
+                    <h4>Web Development</h4>
+                    <p>Learn to build and style websites using HTML and CSS.</p>
+                </article>
+
+                <article class="course-card">
+                    <h4>Computer Networking</h4>
+                    <p>Learn how computers connect and communicate in networks.</p>
+                </article>
+
+                <article class="course-card">
+                    <h4>Database Management</h4>
+                    <p>Learn how information is stored and organised in databases.</p>
+                </article>
+
+                <article class="course-card">
+                    <h4>Cybersecurity</h4>
+                    <p>Learn basic ways to protect computer systems and data.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="timetable">
+            <h2>Weekly Training Timetable</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Course</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Development</td>
+                        <td>9:00 AM – 11:00 AM</td>
+                        <td>Mr. James</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Computer Networking</td>
+                        <td>10:00 AM – 12:00 PM</td>
+                        <td>Ms. Amina</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Database Management</td>
+                        <td>9:00 AM – 11:00 AM</td>
+                        <td>Mr. Peter</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Cybersecurity</td>
+                        <td>1:00 PM – 3:00 PM</td>
+                        <td>Ms. Grace</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="registration">
+            <h2>Student Registration</h2>
+
+            <form action="#" method="post">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="fullName" required>
+
+                <label for="student-number">Student Number:</label>
+                <input type="text" id="student-number" name="studentNumber" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Other
+                    </label>
+                </fieldset>
+
+                <label for="preferred-course">Preferred Course:</label>
+                <select id="preferred-course" name="preferredCourse" required>
+                    <option value="">Select a course</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="networking">Computer Networking</option>
+                    <option value="database-management">Database Management</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                </select>
+
+                <fieldset>
+                    <legend>Study Mode:</legend>
+                    <label>
+                        <input type="checkbox" name="studyMode" value="full-time">
+                        Full-time
+                    </label>
+                    <label>
+                        <input type="checkbox" name="studyMode" value="part-time">
+                        Part-time
+                    </label>
+                </fieldset>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <a class="back-to-top" href="#top">Back to Top</a>
+
+    <footer>
+        <p>&copy; 2026 ISBAT University Student ICT Training Centre. All rights reserved.</p>
+    </footer>
+</body>
+</html>
